@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f5f5f7;
+  color: #222;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 230px;
+  background: #fff;
+  border-right: 1px solid #e8e8eb;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-size: 21px;
+  font-weight: 700;
+  padding: 8px 12px 32px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+nav button {
+  border: none;
+  background: transparent;
+  text-align: left;
+  padding: 12px 14px;
+  border-radius: 9px;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background: #f3f3f5;
+}
+
+nav button.active {
+  background: #ededf0;
+  color: #111;
+  font-weight: 600;
+}
+
+.version {
+  margin-top: auto;
+  padding: 12px;
+  font-size: 11px;
+  color: #999;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 65px;
+  background: white;
+  border-bottom: 1px solid #e8e8eb;
+  display: flex;
+  align-items: center;
+  padding: 0 28px;
+}
+
+header h2 {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.placeholder {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #777;
+}
+
+.placeholder h3 {
+  color: #333;
+  font-size: 23px;
+}
+
+.placeholder p {
+  font-size: 14px;
+}
+
+.placeholder span {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.menu-toggle {
+  position: fixed;
+  top: 14px;
+  left: 14px;
+  z-index: 1001;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: white;
+  color: #222;
+  font-size: 21px;
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.menu-toggle:hover {
+  opacity: 1;
+}
+
+.max-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background: #0006;
+}
+
+.sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: 250px;
+  z-index: 1000;
+  background: white;
+  padding: 75px 16px 20px;
+  box-shadow: 4px 0 20px #0002;
+}
